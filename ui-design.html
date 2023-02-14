@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Abinaya velu</title>
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html"><img class="home-img" src="images/home-icon.png" alt="home" /></a>
+                </div>
+                <ul>
+                    <li class="case-study"><a href="case-study.html">CASE STUDY</a></li>
+                    <li class="personal-project">
+                        <a href="personal-project.html">PERSONAL PROJECT</a>
+                    </li>
+                    <li class="panoptikum">
+                        <a href="panoptikum.html">PANOPTIKUM</a>
+                    </li>
+                    <li class="ui-design"><a class="active" href="ui-design.html">UI DESIGN</a></li>
+                    <li class="about"><a href="about-me.html">ABOUT</a></li>
+                    <li class="contact-me"><a href="about-me.html">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="UIDesign-container">
+            <div class="UIDesign-title">
+                <h3>UI Design</h3>
+            </div>
+            <div class="UIDesign-items gallery">
+                <div class="UIDesign-items-row items-row-1">
+                    <div class="UIDesign-item UIDesign-item-1 gall">
+                        <a href="images/UI1.png" target="_blank">
+                            <img src="images/UI1.png" alt="panoptikum-img-1" />
+                        </a>
+
+                    </div>
+                    <div class="UIDesign-item UIDesign-item-2">
+                        <a href="images/UI2.png" target="_blank"><img src="images/UI2.png" alt="panoptikum-img-2" /></a>
+
+                    </div>
+                    <div class="UIDesign-item UIDesign-item-3">
+                        <a href="images/UI3.png"><img src="images/UI3.png" alt="panoptikum-img-3" /></a>
+
+                    </div>
+                </div>
+                <div class="UIDesign-items-row items-row-2 gallery">
+                    <div class="UIDesign-item UIDesign-item-4">
+                        <a href="images/UI4.png"><img src="images/UI4.png" alt="panoptikum-img-4" /></a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $('.gallery').each(function () { // the containers for all your galleries
+            $(this).magnificPopup({
+                delegate: 'a', // the selector for gallery item
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
